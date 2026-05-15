@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: biblioteca-bot
+    env: docker
+    plan: free
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: RCLONE_TOKEN
+        sync: false
